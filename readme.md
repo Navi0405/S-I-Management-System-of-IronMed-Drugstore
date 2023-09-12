@@ -1,21 +1,9 @@
---- Inventory POS ---
+--- POS Inventory ---
 
-**** Configuration **** 
-   * Update database credentials in config/database.php
-      - You can change also the default password, Used for ressetting user password.
-   * Update your folder name in system_name.js
-
-pos_fresh.sql
-   * Fresh database dump of the system
-   * Remain 1 user for login purpose. 
-       - username : owner
-       - password : owner
-   * If you want to create another owner role. 
-      Just register it in the system then, directly
-      change the role in database
-
-
-
+last update: 8/21/2023
+changes:
+notification number updating
+Product.php line 211, 216, 236, 241, 261, 266 
 
 **** Boolean notes of column in each table ****
 
@@ -35,6 +23,9 @@ Invoices table
 
 Product_details table
  * expired_status
+    4 = Decompose
+    3 = For Return
+    2 = For exchange
     1 = Yes
     0 = No
 
@@ -46,6 +37,12 @@ Products table
     1 = Branded
     0 = Generic
     null = <No Type>
+ * stock status
+    0 = out of stock
+    1 = normal stock
+    2 = under stock
+    3 = over stock
+    
 
 Sales table
   * void
