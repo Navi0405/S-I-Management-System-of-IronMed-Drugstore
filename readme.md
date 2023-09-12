@@ -1,4 +1,4 @@
---- POS Inventory ---
+--- IronMed POS Inventory ---
 
 last update: 8/21/2023
 changes:
